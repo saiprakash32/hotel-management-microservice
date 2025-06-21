@@ -30,7 +30,7 @@ public class AuthService {
 			return response;
 		}
 
-		if (userRepository.existsByUsername(userDto.getUsername())) {
+		if (userRepository.existsByEmail(userDto.getEmail())) {
 			
 
 			response.setMessage("Email already registered");
